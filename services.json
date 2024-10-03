@@ -1,0 +1,122 @@
+{
+  "naedine": {
+    "name": "Клиника Наедине",
+    "url": "https://klinika-naedine.ru/request/admission",
+    "datatype": "multipart",
+    "payload": {
+      "RecallForm[name]": [
+        "%none%",
+        "%rname%"
+      ],
+      "RecallForm[phone]": [
+        "%none%",
+        "{ph_w}"
+      ],
+      "RecallForm[email]": [
+        "%none%",
+        "%rmail%"
+      ],
+      "RecallForm[date]": [
+        "%none%",
+        "%today%"
+      ],
+      "RecallForm[call_time]": [
+        "%none%",
+        "день"
+      ],
+      "RecallForm[branch]": [
+        "%none%",
+        16
+      ],
+      "RecallForm[doctor]": [
+        "%none%",
+        50
+      ],
+      "RecallForm[email_field_form]": [
+        "%none%",
+        "%none%"
+      ],
+      "RecallForm[check]": [
+        "%none%",
+        1
+      ]
+    }
+  },
+  "era_medcenter": {
+    "name": "Медцентр Эра",
+    "url": "https://era-medcenter.ru/doctor/sendSms",
+    "datatype": "plain",
+    "payload": {
+      "phone": "{ph_s}"
+    }
+  },
+  "junona_medcenter": {
+    "name": "Медцентр Юнона",
+    "url": "https://junona-nsk.ru/wp-admin/admin-ajax.php",
+    "datatype": "multipart",
+    "payload": {
+      "name": [
+        "%none%",
+        "%rname%"
+      ],
+      "phone": [
+        "%none%",
+        "{ph_w}"
+      ],
+      "privacy": [
+        "%none%",
+        "on"
+      ],
+      "form_name": [
+        "%none%",
+        "Запись на приём"
+      ],
+      "modal_success": [
+        "%none%",
+        "modalMakeAppointmentAllSuccess"
+      ],
+      "ya_metrica_goal_name": [
+        "%none%",
+        "%none%"
+      ],
+      "action": [
+        "%none%",
+        "send_message"
+      ],
+      "seolead_ya": [
+        "%none%",
+        "Запись на приём"
+      ],
+      "from_site": [
+        "%none%",
+        "https://junona-nsk.ru/services-cat/proktologija/"
+      ]
+    }
+  },
+  "sunlight": {
+    "name": "Санлайт",
+    "url": "https://api.sunlight.net/modules/customer-auth/v1/web/send/",
+    "datatype": "plain",
+    "payload": {
+      "phone": "+{ph}",
+      "source": "web_auth_page"
+    }
+  },
+  "norvik": {
+    "name": "Норвик Банк",
+    "url": "https://api.norvikbank.ru/api/v1/verify/phone",
+    "datatype": "plain",
+    "payload": {
+      "phone": "{ph_w}"
+    }
+  },
+  "sayoris": {
+    "name": "Sayori",
+    "url": "https://sayoris.ru/api/user/register",
+    "datatype": "json",
+    "payload": {
+      "phone": "{ph_1}",
+      "verify_type": "call"
+    }
+  }
+}
